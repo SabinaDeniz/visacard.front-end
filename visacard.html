@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <link rel="stylesheet" href="../static/css/visacard.css">
+    </head>
+    <body>
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+            <form action="">
+                <div>
+                    <label for="">CARDHOLDER NAME</label>
+                    <input type="text" placeholder="e.g.Jane Appleseed" name="" id="" oninput="upper()">
+                    <div class="error name">Wrong format string only</div>
+                </div>
+            
+                <div>
+                    <label for="">CARD NUMBER</label>
+                    <input type="text" placeholder="e.g.1234 5678 9123 0000" name="" id="" oninput="myInput()" maxlength="19" required>
+                    <div class="error card">Wrong format numbers only</div>
+                </div>
+                <div class="date">
+                    <div>
+                        <label for="text">EXP.DATE (MM/YY)</label>
+                        <input type="text" placeholder="MM" name="" id="MM" oninput="month()" maxlength="2">
+                        <input type="text" placeholder="YY" name="" id="YY" oninput="year()" maxlength="2">    
+                    </div>
+                    <div>
+                        <label for="">CVV</label>
+                        <input type="number" placeholder="e.g.123" name="" id="cvv" oninput="test()" maxlength="3">    
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Confirm">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+        <div class="front">
+            <div class="info">
+                <img src="../static/images/card-logo.svg" alt="">
+                <p class="number">0000 0000 0000 0000</p>
+            <div class="input">
+                <p class="name">JANE APPLESEED</p>
+                <p class="my"><span class="month">00</span>/<span class="year">00</span></p>
+            </div>
+            </div>
+        </div>
+        <div class="back">
+            <p class="cv">000</p> 
+        </div>
+
+
+        <script src="../static/js/visacard.js"></script>
+    </body>
+</html>

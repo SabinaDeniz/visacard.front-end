@@ -1,0 +1,230 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html, body{
+    /* border: 1px solid red; */
+    height: 100%;
+}
+body{
+    display: flex;
+}
+div.left{
+    height: 100%;
+    width: 30%;
+    background-image: url('../images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+div.right{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    
+}
+ @media screen and (max-width: 1200px){
+    body{
+        flex-direction: column;
+    }
+    div.left, div.right{
+        width: 100%;
+        height: 30%;
+    }
+    div.left{
+        background-image: url('../images/bg-main-mobile.png');
+    }
+}
+label{
+    display: block;
+    font-size: 10px;
+    /* margin-left: 10px; */
+    margin-bottom: 5px;
+}
+input[type=submit]{
+    display: block;
+    /* margin-left: 10px; */
+    /* width: 75%; */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:   hsl(278, 68%, 11%);
+    color: white;
+    margin-top: 20px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 75%;
+    border: 1px solid rgb(197, 194, 194);
+}
+form > div {
+    margin: 15px 0;
+    width: 100%;
+    /* width: max-content; */
+}
+form > div > input{
+    display: block;
+    width: 100%;
+}
+
+#MM{
+width: 13%;
+position:absolute;
+/* margin-left: 13px; */
+}
+
+#YY{
+    width: 13%;
+    position:absolute;
+    margin: 0 50px;
+    
+}
+#cvv{
+    width: 110%;
+}
+div.date{
+    display: flex;
+    /* display: block */
+    /* border: 1px solid red ; */
+}
+
+div.date > div{
+    /* border: 1px solid black; */
+    margin-right: 20px;
+}
+
+div.form{
+position: absolute;
+top: 30%;
+left: 55%;
+}
+
+div.front{
+    display: flex;
+    width: 23%;
+    height: 180px;
+    background-image: url('../images/bg-card-front.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    
+}
+div.back{
+    width: 23%;
+    height: 180px;
+    background-image: url('../images/bg-card-back.png');
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 53%;
+    left: 18%;
+}
+div.info{
+
+}
+
+#nums{
+    position: absolute;
+    bottom: 40px;
+    width: 90%;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    ;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    font-weight: bolder;
+
+}
+img{
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+#owner{
+    position: absolute;
+    bottom: 3px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    outline: none;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+#mmyy{
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+div.back > input{
+    padding: 5px;
+    text-align: right;
+    position: absolute;
+    bottom: 68px;
+    left: 15px;
+    width: 85%;
+    background-color: rgb(165, 161, 161);
+    outline: none;
+    border: none;
+    color: white;
+    
+}
+
+p.number{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+p.cv{
+    position: absolute;
+    bottom: 82px;
+    right: 30px;
+    font-size: 15px;
+    color: white;
+
+}
+
+div.error{
+    font-size: 10px;
+    color: red;
+    padding-top: 2px;
+    visibility: hidden;
+}
+
+.name{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 13px;
+    color: white;
+}
+.my{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 13px;
+    color: white
+}
